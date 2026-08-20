@@ -1,0 +1,56 @@
+name: Supplement Roadmap Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * 1'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Count supplement profiles
+        id: count
+        shell: bash
+        run: |
+          count=$(find pt/supplements -maxdepth 1 -type f -name '*.html' | wc -l | tr -d ' ')
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "Found $count supplement profile pages."
+
+      - name: Maintain roadmap issue
+        if: steps.count.outputs.count != '100'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COUNT: ${{ steps.count.outputs.count }}
+        shell: bash
+        run: |
+          title='[Automation] Continue WellMax supplement roadmap'
+          body=$(cat <<EOF
+          The WellMax supplement library currently contains **${COUNT} HTML profiles** in \`pt/supplements/\`.
+
+          Target: **100 profiles**.
+
+          Next action:
+          1. Read \`docs/SUPPLEMENTS_ROADMAP.md\`.
+          2. Identify the next incomplete batch.
+          3. Research current evidence and regulatory context.
+          4. Create or update the 10 pages on a task-specific branch.
+          5. Update hub discovery and \`sitemap.xml\`.
+          6. Open one PR and require the Quality workflow to pass before merge.
+
+          This issue is maintained automatically by \`.github/workflows/supplement-roadmap.yml\`.
+          EOF
+          )
+          number=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --title "$title" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
