@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wellmax.local/schemas/agent-state.schema.json",
+  "title": "WellMax Agent Pipeline State",
+  "type": "object",
+  "required": ["item_id", "title", "content_type", "locale", "status", "tier", "updated_at"],
+  "properties": {
+    "item_id": {"type": "string"},
+    "title": {"type": "string"},
+    "content_type": {"enum": ["supplement", "peptide", "comparison", "article", "hub", "technical"]},
+    "locale": {"enum": ["pt-BR", "en", "es"]},
+    "status": {
+      "enum": [
+        "BACKLOG", "SELECTED", "RESEARCHING", "RESEARCH_COMPLETE", "RESEARCH_BLOCKED",
+        "DRAFTING", "CONTENT_COMPLETE", "CONTENT_CHANGES_REQUIRED", "UX_REVIEW", "UX_APPROVED",
+        "UX_CHANGES_REQUIRED", "SEO_REVIEW", "SEO_APPROVED", "SEO_CHANGES_REQUIRED", "TIER_2_REVIEW",
+        "TIER_2_SCIENCE_APPROVED", "TIER_2_SCIENCE_CHANGES_REQUIRED", "TIER_3_REVIEW", "TIER_3_BLOCKED",
+        "TIER_3_APPROVED", "PUBLISHED"
+      ]
+    },
+    "tier": {"type": "integer", "minimum": 1, "maximum": 3},
+    "priority": {"type": "integer", "minimum": 1, "maximum": 100},
+    "branch": {"type": ["string", "null"]},
+    "pr_number": {"type": ["integer", "null"]},
+    "research_sources": {"type": "array", "items": {"type": "string"}},
+    "approvals": {
+      "type": "object",
+      "properties": {
+        "research": {"type": "boolean"},
+        "content": {"type": "boolean"},
+        "ux": {"type": "boolean"},
+        "seo": {"type": "boolean"},
+        "science": {"type": "boolean"},
+        "technical": {"type": "boolean"},
+        "publisher": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "blocking_reason": {"type": ["string", "null"]},
+    "lock_owner": {"type": ["string", "null"]},
+    "lock_expires_at": {"type": ["string", "null"], "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "published_at": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "additionalProperties": false
+}
