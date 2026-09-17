@@ -393,8 +393,8 @@
       },
       "status": {
         "en": "PARTIAL",
-        "pt": "SHELL",
-        "es": "SHELL"
+        "pt": "PARTIAL",
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -410,7 +410,7 @@
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): PT, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: PT, ES."
+      "notes": "EN, PT-BR, and ES now contain the subscription-product preview and explicit clinical review boundary. Human i18n, safety, metadata, and no-JavaScript review remain required. No non-language inbound discovery link was detected for: PT, ES."
     },
     {
       "id": "home",
@@ -517,8 +517,8 @@
       },
       "status": {
         "en": "PARTIAL",
-        "pt": "SHELL",
-        "es": "SHELL"
+        "pt": "PARTIAL",
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -534,7 +534,7 @@
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "MEDIUM",
-      "notes": "Generated shell locale(s): PT, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements."
+      "notes": "EN, PT-BR, and ES now contain the planned subscription model and explicit clinical review boundary. Human i18n, safety, metadata, and no-JavaScript review remain required."
     },
     {
       "id": "metabolism",

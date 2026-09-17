@@ -486,14 +486,10 @@ jobs:
           const shellCases = [
             ['pt/biomarkers.html', '/wellmax/pt/biomarkers.html', 'pt', 'biomarkers.html'],
             ['pt/comparisons.html', '/wellmax/pt/comparisons.html', 'pt', 'comparisons.html'],
-            ['pt/health-hub.html', '/wellmax/pt/health-hub.html', 'pt', 'health-hub.html'],
-            ['pt/membership.html', '/wellmax/pt/membership.html', 'pt', 'membership.html'],
             ['es/explore.html', '/wellmax/es/explore.html', 'es', 'explore.html'],
             ['es/library.html', '/wellmax/es/library.html', 'es', 'library.html'],
             ['es/biomarkers.html', '/wellmax/es/biomarkers.html', 'es', 'biomarkers.html'],
             ['es/comparisons.html', '/wellmax/es/comparisons.html', 'es', 'comparisons.html'],
-            ['es/health-hub.html', '/wellmax/es/health-hub.html', 'es', 'health-hub.html'],
-            ['es/membership.html', '/wellmax/es/membership.html', 'es', 'membership.html'],
             ['es/peptides/retatrutide.html', '/wellmax/es/peptides/retatrutide.html', 'es', 'peptides/retatrutide.html'],
             ['es/biomarkers/hba1c.html', '/wellmax/es/biomarkers/hba1c.html', 'es', 'biomarkers/hba1c.html'],
             ['es/supplements/omega-3.html', '/wellmax/es/supplements/omega-3.html', 'es', 'supplements/omega-3.html']
@@ -609,7 +605,8 @@ jobs:
             const html = fs.readFileSync(file, 'utf8');
             const usesApp = /assets\/app\.js/.test(html);
             const usesI18nShell = /assets\/i18n-page\.js/.test(html);
-            assert.ok(usesApp || usesI18nShell, `${file} has no shared header renderer`);
+            const usesPortalRenderer = /assets\/portal-i18n\.js/.test(html);
+            assert.ok(usesApp || usesI18nShell || usesPortalRenderer, `${file} has no shared header renderer`);
             if (html.includes('data-language-menu')) {
               assert.ok(html.includes(canonicalSvg), `${file} contains non-canonical static globe markup`);
               assert.ok(html.includes('class="language-button"'), `${file} static selector lacks language-button`);
@@ -624,6 +621,54 @@ jobs:
 
           console.log(`Validated the canonical language selector on ${cases.length} representative routes, ${shellCases.length} generated localized hubs and all ${htmlFiles.length} public HTML files.`);
           console.log('Explicitly validated pt/comparisons.html through i18n-page.js -> app.js with PT active and reciprocal identity links.');
+          JS
+
+      - name: Validate localized subscription portal renderer
+        run: |
+          node <<'JS'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const vm = require('node:vm');
+
+          const source = fs.readFileSync('assets/portal-i18n.js', 'utf8');
+          for (const locale of ['pt', 'es']) {
+            for (const portalPage of ['health-hub', 'membership']) {
+              let markup = '';
+              let appendedScript = null;
+              const root = {};
+              Object.defineProperty(root, 'innerHTML', {
+                get() { return markup; },
+                set(value) { markup = value; }
+              });
+              const meta = { parentNode: {}, name: 'description', content: '' };
+              const canonical = { parentNode: {}, rel: 'canonical', href: '' };
+              const document = {
+                title: '',
+                body: {
+                  dataset: { portalPage, locale },
+                  append(node) { appendedScript = node; }
+                },
+                head: { append(node) { node.parentNode = this; } },
+                getElementById: (id) => id === 'portal-root' ? root : null,
+                querySelector: (selector) => {
+                  if (selector === 'meta[name="description"]') return meta;
+                  if (selector === 'link[rel="canonical"]') return canonical;
+                  return null;
+                },
+                createElement: (tagName) => ({ tagName: tagName.toUpperCase(), parentNode: null })
+              };
+
+              vm.runInNewContext(source, { document });
+              assert.ok(markup.includes('class="site-header"'), `${locale}/${portalPage}: header missing`);
+              assert.ok(markup.includes('class="portal-hero'), `${locale}/${portalPage}: portal hero missing`);
+              assert.ok(markup.includes('<h1>'), `${locale}/${portalPage}: H1 missing`);
+              assert.equal(appendedScript.src, '../assets/app.js', `${locale}/${portalPage}: app.js handoff missing`);
+              assert.ok(document.title.includes('WellMax'), `${locale}/${portalPage}: title missing`);
+              assert.ok(canonical.href.includes(`/${locale}/${portalPage}.html`), `${locale}/${portalPage}: canonical mismatch`);
+            }
+          }
+
+          console.log('Validated PT-BR and ES portal rendering for Health Hub and Membership.');
           JS
 
       - name: Validate Spanish and Portuguese locale routing

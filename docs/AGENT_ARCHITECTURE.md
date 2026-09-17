@@ -520,3 +520,22 @@ Stop and request human direction when:
 - Safety policy interpretation affects actionable content.
 - Required testing is unavailable for a high-risk change.
 - A diff contains unrelated user work that cannot be preserved safely.
+
+## Subscription portal specialist extension
+
+The seven core repository roles remain authoritative. Subscription work adds specialist reviewers beneath the existing Supervisor rather than creating an independent chain of command:
+
+- Product & Subscription for entitlements, activation, retention, and honest availability.
+- Identity, Billing & Entitlements for authentication, payment webhooks, and access control.
+- Interoperability for FHIR, terminology, provenance, and import/export contracts.
+- Laboratory Data for extraction, units, reference context, and longitudinal normalization.
+- Wearables Data for consent, signed webhooks, idempotency, time-series quality, and device limitations.
+- Evidence Research for reproducible PubMed research, grading, citations, and freshness.
+- Draft Synthesis for educational cross-data summaries; it has no final clinical authority.
+- Clinical Safety for contraindication detection, escalation, and qualified human review routing.
+- Privacy & Security for PHI/PII boundaries, minimization, retention, audit, and incident controls.
+- AI Evaluation for citation faithfulness, unsafe-request rejection, golden cases, and drift checks.
+- Release & Reliability for observability, rollback, provider failures, and incident readiness.
+- Legal/Compliance remains a human review function for jurisdiction, claims, consent, and contracts.
+
+The specialist workflow and installed skill allocation are defined in `docs/SUBSCRIPTION_PORTAL_ARCHITECTURE.md`. No specialist may bypass the existing BUILD → QA → SEO/I18N → SUPERVISOR → HUMAN MERGE chain.
