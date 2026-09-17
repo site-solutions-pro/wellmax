@@ -114,6 +114,20 @@ Objective: add useful, accessible tools only after content, safety, identity, an
 
 Exit criteria: human-approved safety model, accessible and tested tools, privacy controls where applicable, and successful production monitoring.
 
+## Phase 7 — Subscription health-intelligence portal
+
+Objective: turn the public evidence platform into a permissioned, longitudinal member experience without weakening the educational-only boundary or the human clinical-review gate.
+
+- [x] Create an honest EN/PT-BR/ES product preview for Health Hub and Membership.
+- [ ] Validate subscription positioning and plan entitlements before pricing.
+- [ ] Approve identity, billing, consent, privacy, retention, and deletion architecture.
+- [ ] Implement event-driven laboratory and wearable ingestion using signed webhooks and idempotency.
+- [ ] Build traceable cross-data health briefs with sources, uncertainty, conflicts, and missing-data flags.
+- [ ] Add a qualified professional review workflow for clinical, medication, supplement, or peptide decisions.
+- [ ] Establish healthcare-specific AI evaluations, negative safety cases, accessibility QA, and incident response.
+
+Gate: public product messaging may ship independently. Authentication, billing, sensitive health data, personalized synthesis, and professional review remain blocked until their architecture, privacy, security, legal, clinical, and human-approval gates pass. See `docs/SUBSCRIPTION_PORTAL_ARCHITECTURE.md`.
+
 ## Cross-phase governance backlog
 
 - [x] Establish WellMax Agent System v1 governance contracts.

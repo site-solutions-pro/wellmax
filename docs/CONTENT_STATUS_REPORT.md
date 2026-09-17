@@ -17,8 +17,8 @@ Generated from `data/content-manifest.json` on 2026-08-26. This is an inventory 
 | Status | EN | PT-BR | ES | Total |
 |---|---:|---:|---:|---:|
 | COMPLETE | 1 | 0 | 0 | 1 |
-| PARTIAL | 36 | 25 | 1 | 62 |
-| SHELL | 19 | 25 | 55 | 99 |
+| PARTIAL | 36 | 27 | 3 | 66 |
+| SHELL | 19 | 23 | 53 | 95 |
 | MISSING | 0 | 0 | 0 | 0 |
 | REVIEW_REQUIRED | 0 | 6 | 0 | 6 |
 
