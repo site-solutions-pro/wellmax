@@ -9,7 +9,7 @@ Generated from `data/content-manifest.json` on 2026-10-31. This is an inventory 
 - Locales: EN, PT-BR, ES
 - Families with all three route files: **56**
 - Families complete in every locale: **0**
-- Families with at least one shell: **48**
+- Families with at least one shell: **34**
 - Families with at least one missing locale: **0**
 
 ## Status by locale
@@ -17,8 +17,8 @@ Generated from `data/content-manifest.json` on 2026-10-31. This is an inventory 
 | Status | EN | PT-BR | ES | Total |
 |---|---:|---:|---:|---:|
 | COMPLETE | 0 | 0 | 0 | 0 |
-| PARTIAL | 38 | 26 | 8 | 72 |
-| SHELL | 18 | 24 | 48 | 90 |
+| PARTIAL | 52 | 26 | 22 | 100 |
+| SHELL | 4 | 24 | 34 | 62 |
 | MISSING | 0 | 0 | 0 | 0 |
 | REVIEW_REQUIRED | 0 | 6 | 0 | 6 |
 
@@ -84,9 +84,9 @@ Family review fields: **51** families require scientific review, **56** families
 
 ## Translation parity
 
-- EN: **0 COMPLETE**, **38 PARTIAL**, **18 SHELL**, **0 MISSING**, **0 REVIEW_REQUIRED**.
+- EN: **0 COMPLETE**, **52 PARTIAL**, **4 SHELL**, **0 MISSING**, **0 REVIEW_REQUIRED**.
 - PT-BR: **0 COMPLETE**, **26 PARTIAL**, **24 SHELL**, **0 MISSING**, **6 REVIEW_REQUIRED**.
-- ES: **0 COMPLETE**, **8 PARTIAL**, **48 SHELL**, **0 MISSING**, **0 REVIEW_REQUIRED**.
+- ES: **0 COMPLETE**, **22 PARTIAL**, **34 SHELL**, **0 MISSING**, **0 REVIEW_REQUIRED**.
 - No family is `COMPLETE` across all three locales.
 
 ## Human decisions required

@@ -493,8 +493,7 @@ jobs:
             ['es/comparisons.html', '/wellmax/es/comparisons.html', 'es', 'comparisons.html'],
             ['es/membership.html', '/wellmax/es/membership.html', 'es', 'membership.html'],
             ['es/peptides/retatrutide.html', '/wellmax/es/peptides/retatrutide.html', 'es', 'peptides/retatrutide.html'],
-            ['es/biomarkers/hba1c.html', '/wellmax/es/biomarkers/hba1c.html', 'es', 'biomarkers/hba1c.html'],
-            ['es/supplements/omega-3.html', '/wellmax/es/supplements/omega-3.html', 'es', 'supplements/omega-3.html']
+            ['es/biomarkers/hba1c.html', '/wellmax/es/biomarkers/hba1c.html', 'es', 'biomarkers/hba1c.html']
           ];
 
           for (const [pathname, locale] of cases) {
