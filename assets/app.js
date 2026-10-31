@@ -21,6 +21,8 @@
       nav: 'Primary navigation',
       explore: 'Explore',
       library: 'Research Library',
+      peptides: 'Peptides',
+      supplements: 'Supplements',
       biomarkers: 'Biomarkers',
       comparisons: 'Comparisons',
       membership: 'Membership',
@@ -32,6 +34,8 @@
       nav: 'Navegação principal',
       explore: 'Explorar',
       library: 'Biblioteca',
+      peptides: 'Peptídeos',
+      supplements: 'Suplementos',
       biomarkers: 'Biomarcadores',
       comparisons: 'Comparações',
       membership: 'Assinatura',
@@ -43,6 +47,8 @@
       nav: 'Navegación principal',
       explore: 'Explorar',
       library: 'Biblioteca',
+      peptides: 'Péptidos',
+      supplements: 'Suplementos',
       biomarkers: 'Biomarcadores',
       comparisons: 'Comparaciones',
       membership: 'Membresía',
@@ -64,15 +70,16 @@
   const existingHeader = document.querySelector('.site-header');
   if (existingHeader) {
     existingHeader.innerHTML = `
-      <a class="brand" href="${homeHref}" aria-label="WellMax Education home">
-        <span class="brand-mark">W</span><span>WellMax Education</span>
+      <a class="brand" href="${homeHref}" aria-label="WellMax home">
+        <span class="brand-mark">W</span><span>WellMax</span>
       </a>
       <nav class="main-nav" aria-label="${labels.nav}">
         <a href="${pageHref('explore.html')}"${activeAttr('explore.html')}>${labels.explore}</a>
         <a href="${pageHref('library.html')}"${activeAttr('library.html')}>${labels.library}</a>
+        <a href="${pageHref('peptides.html')}"${activeAttr('peptides.html')}>${labels.peptides}</a>
+        <a href="${pageHref('supplements.html')}"${activeAttr('supplements.html')}>${labels.supplements}</a>
         <a href="${pageHref('biomarkers.html')}"${activeAttr('biomarkers.html')}>${labels.biomarkers}</a>
         <a href="${pageHref('comparisons.html')}"${activeAttr('comparisons.html')}>${labels.comparisons}</a>
-        <a href="${pageHref('membership.html')}"${activeAttr('membership.html')}>${labels.membership}</a>
       </nav>
       <div class="header-actions">
         <div class="language-menu" data-language-menu>
@@ -163,7 +170,15 @@
       card.classList.toggle('hidden', !matches);
       if (matches) visible += 1;
     });
-    if (resultCount) resultCount.textContent = `${visible} ${visible === 1 ? 'result' : 'results'}`;
+    document.querySelectorAll('[data-group]').forEach((group) => {
+      group.classList.toggle('hidden', !group.querySelector('[data-search]:not(.hidden)'));
+    });
+    document.querySelector('#libraryEmpty')?.classList.toggle('hidden', visible > 0);
+    if (resultCount) {
+      const one = resultCount.dataset.labelOne || 'result';
+      const many = resultCount.dataset.labelMany || 'results';
+      resultCount.textContent = `${visible} ${visible === 1 ? one : many}`;
+    }
   };
 
   filterButtons.forEach((button) => {

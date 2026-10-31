@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_on": "2026-08-26",
+  "generated_on": "2026-10-31",
   "repository": "site-solutions-pro/wellmax",
   "production_base": "https://site-solutions-pro.github.io/wellmax/",
   "locales": {
@@ -62,8 +62,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -93,8 +93,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -124,8 +124,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -155,8 +155,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -186,8 +186,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -217,8 +217,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -248,8 +248,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -279,8 +279,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -342,7 +342,7 @@
       "linked": {
         "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -393,8 +393,8 @@
       },
       "status": {
         "en": "PARTIAL",
-        "pt": "SHELL",
-        "es": "SHELL"
+        "pt": "PARTIAL",
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -403,14 +403,14 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
-      "scientific_review": "N/A",
+      "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): PT, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: PT, ES."
+      "notes": "Generated shell locale(s): PT, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: PT, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "home",
@@ -423,7 +423,7 @@
         "es": "/wellmax/es/"
       },
       "status": {
-        "en": "COMPLETE",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
         "es": "PARTIAL"
       },
@@ -441,7 +441,7 @@
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "MEDIUM",
-      "notes": "One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. EN meets the v1 structural and metadata threshold; PT and ES remain partial pending metadata and human i18n review."
+      "notes": "One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. EN meets the v1 structural and metadata threshold; PT and ES remain partial pending metadata and human i18n review. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "library",
@@ -456,7 +456,7 @@
       "status": {
         "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -468,11 +468,11 @@
         "pt": true,
         "es": true
       },
-      "scientific_review": "N/A",
+      "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements."
+      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "longevity",
@@ -487,7 +487,7 @@
       "status": {
         "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -499,11 +499,11 @@
         "pt": true,
         "es": true
       },
-      "scientific_review": "N/A",
+      "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements."
+      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "membership",
@@ -549,7 +549,7 @@
       "status": {
         "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -561,11 +561,11 @@
         "pt": true,
         "es": true
       },
-      "scientific_review": "N/A",
+      "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements."
+      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "neuroscience",
@@ -580,7 +580,7 @@
       "status": {
         "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -592,11 +592,11 @@
         "pt": true,
         "es": true
       },
-      "scientific_review": "N/A",
+      "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements."
+      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "peptides",
@@ -651,8 +651,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -682,7 +682,7 @@
       },
       "linked": {
         "en": false,
-        "pt": true,
+        "pt": false,
         "es": false
       },
       "scientific_review": "REVIEW_REQUIRED",
@@ -713,8 +713,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -744,8 +744,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -775,8 +775,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -806,7 +806,7 @@
       },
       "linked": {
         "en": false,
-        "pt": true,
+        "pt": false,
         "es": false
       },
       "scientific_review": "REVIEW_REQUIRED",
@@ -837,8 +837,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -868,7 +868,7 @@
       },
       "linked": {
         "en": false,
-        "pt": true,
+        "pt": false,
         "es": false
       },
       "scientific_review": "REVIEW_REQUIRED",
@@ -899,8 +899,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -930,7 +930,7 @@
       },
       "linked": {
         "en": false,
-        "pt": true,
+        "pt": false,
         "es": false
       },
       "scientific_review": "REVIEW_REQUIRED",
@@ -961,8 +961,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -993,7 +993,7 @@
       "linked": {
         "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1024,7 +1024,7 @@
       "linked": {
         "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1054,8 +1054,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1085,8 +1085,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1116,8 +1116,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1147,8 +1147,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1178,8 +1178,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1209,8 +1209,8 @@
       },
       "linked": {
         "en": true,
-        "pt": false,
-        "es": false
+        "pt": true,
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1231,7 +1231,7 @@
       "status": {
         "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1243,11 +1243,11 @@
         "pt": true,
         "es": true
       },
-      "scientific_review": "N/A",
+      "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements."
+      "notes": "Generated shell locale(s): ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "research-tracker",
@@ -1272,7 +1272,7 @@
       "linked": {
         "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
@@ -1291,9 +1291,9 @@
         "es": "/wellmax/es/supplements.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1301,15 +1301,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
-      "scientific_review": "N/A",
+      "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "b-complex",
@@ -1322,9 +1322,9 @@
         "es": "/wellmax/es/supplements/b-complex.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1332,15 +1332,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "biotin-b7",
@@ -1353,9 +1353,9 @@
         "es": "/wellmax/es/supplements/biotin-b7.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1363,15 +1363,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "folate-b9",
@@ -1384,9 +1384,9 @@
         "es": "/wellmax/es/supplements/folate-b9.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1394,15 +1394,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "magnesium",
@@ -1415,9 +1415,9 @@
         "es": "/wellmax/es/supplements/magnesium.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1425,15 +1425,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "niacin-b3",
@@ -1446,9 +1446,9 @@
         "es": "/wellmax/es/supplements/niacin-b3.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1456,15 +1456,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "omega-3",
@@ -1477,9 +1477,9 @@
         "es": "/wellmax/es/supplements/omega-3.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1487,15 +1487,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "pantothenic-b5",
@@ -1508,9 +1508,9 @@
         "es": "/wellmax/es/supplements/pantothenic-b5.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1518,15 +1518,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "riboflavin-b2",
@@ -1539,9 +1539,9 @@
         "es": "/wellmax/es/supplements/riboflavin-b2.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1549,15 +1549,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "thiamin-b1",
@@ -1570,9 +1570,9 @@
         "es": "/wellmax/es/supplements/thiamin-b1.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1580,15 +1580,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "vitamin-b12",
@@ -1601,9 +1601,9 @@
         "es": "/wellmax/es/supplements/vitamin-b12.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1611,15 +1611,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "vitamin-b6",
@@ -1632,9 +1632,9 @@
         "es": "/wellmax/es/supplements/vitamin-b6.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1642,15 +1642,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "vitamin-c",
@@ -1663,9 +1663,9 @@
         "es": "/wellmax/es/supplements/vitamin-c.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1673,15 +1673,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "vitamin-d3",
@@ -1694,9 +1694,9 @@
         "es": "/wellmax/es/supplements/vitamin-d3.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1704,15 +1704,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     },
     {
       "id": "zinc",
@@ -1725,9 +1725,9 @@
         "es": "/wellmax/es/supplements/zinc.html"
       },
       "status": {
-        "en": "SHELL",
+        "en": "PARTIAL",
         "pt": "PARTIAL",
-        "es": "SHELL"
+        "es": "PARTIAL"
       },
       "sitemap": {
         "en": true,
@@ -1735,15 +1735,15 @@
         "es": true
       },
       "linked": {
-        "en": false,
+        "en": true,
         "pt": true,
-        "es": false
+        "es": true
       },
       "scientific_review": "REVIEW_REQUIRED",
       "seo_review": "REVIEW_REQUIRED",
       "i18n_review": "REVIEW_REQUIRED",
       "priority": "HIGH",
-      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES."
+      "notes": "Generated shell locale(s): EN, ES. One or more substantive variants remain incomplete against metadata, structure, translation, or content-contract requirements. No non-language inbound discovery link was detected for: EN, ES. Portal foundation (2026-10-31): rebuilt as static, substantive pages in the locales listed as PARTIAL; awaiting independent QA, SEO/i18n and scientific review."
     }
   ]
 }
