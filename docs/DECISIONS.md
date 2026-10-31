@@ -46,7 +46,7 @@
 
 **Reason:** Domain, legal, visual identity, redirects and SEO migration have not been approved.
 
-**Status:** Adopted.
+**Status:** Superseded on 2026-10-31 by "WellMax becomes the public name".
 
 ## 2026-08-02 — Biomarker Center begins as architecture
 
@@ -63,3 +63,18 @@
 **Reason:** Comparative intelligence should increase context without becoming prescribing guidance.
 
 **Status:** Adopted.
+## 2026-10-31 — WellMax becomes the public name
+
+**Decision:** Use WellMax in titles, navigation, footers, structured data and public copy on every page. The repository URL (`/wellmax/`) is unchanged, so no redirect or URL migration is involved.
+
+**Reason:** The maintainer asked for WellMax branding on every page as part of turning the site into a wellness portal. Production already lives under `/wellmax/`, and mixed PepEducation/WellMax naming confused readers.
+
+**Status:** Adopted on branch `feat/portal-foundation`; pending human merge.
+
+## 2026-10-31 — Supplements join the primary navigation
+
+**Decision:** Primary navigation becomes Explore, Library, Peptides, Supplements, Biomarkers and Comparisons. Membership moves to page footers and homepage calls to action.
+
+**Reason:** Supplements and peptides are the two most requested content areas; Membership describes planned features that are not available yet.
+
+**Status:** Adopted on branch `feat/portal-foundation`; pending human merge.

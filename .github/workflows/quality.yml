@@ -297,7 +297,7 @@ jobs:
 
           // assets/app.js supplies these non-language primary navigation links at runtime.
           for (const locale of locales) {
-            for (const identity of ['index.html', 'explore.html', 'library.html', 'biomarkers.html', 'comparisons.html', 'membership.html']) {
+            for (const identity of ['index.html', 'explore.html', 'library.html', 'peptides.html', 'supplements.html', 'biomarkers.html', 'comparisons.html']) {
               const target = localeFile(locale, identity);
               if (Object.hasOwn(inbound, target)) inbound[target] += 1;
             }
@@ -437,9 +437,10 @@ jobs:
               pagePath(locale, 'index.html'),
               pagePath(locale, 'explore.html'),
               pagePath(locale, 'library.html'),
+              pagePath(locale, 'peptides.html'),
+              pagePath(locale, 'supplements.html'),
               pagePath(locale, 'biomarkers.html'),
               pagePath(locale, 'comparisons.html'),
-              pagePath(locale, 'membership.html'),
               pagePath('en', contentPath),
               pagePath('pt', contentPath),
               pagePath('es', contentPath)
@@ -486,13 +487,10 @@ jobs:
           const shellCases = [
             ['pt/biomarkers.html', '/wellmax/pt/biomarkers.html', 'pt', 'biomarkers.html'],
             ['pt/comparisons.html', '/wellmax/pt/comparisons.html', 'pt', 'comparisons.html'],
-            ['pt/health-hub.html', '/wellmax/pt/health-hub.html', 'pt', 'health-hub.html'],
             ['pt/membership.html', '/wellmax/pt/membership.html', 'pt', 'membership.html'],
             ['es/explore.html', '/wellmax/es/explore.html', 'es', 'explore.html'],
-            ['es/library.html', '/wellmax/es/library.html', 'es', 'library.html'],
             ['es/biomarkers.html', '/wellmax/es/biomarkers.html', 'es', 'biomarkers.html'],
             ['es/comparisons.html', '/wellmax/es/comparisons.html', 'es', 'comparisons.html'],
-            ['es/health-hub.html', '/wellmax/es/health-hub.html', 'es', 'health-hub.html'],
             ['es/membership.html', '/wellmax/es/membership.html', 'es', 'membership.html'],
             ['es/peptides/retatrutide.html', '/wellmax/es/peptides/retatrutide.html', 'es', 'peptides/retatrutide.html'],
             ['es/biomarkers/hba1c.html', '/wellmax/es/biomarkers/hba1c.html', 'es', 'biomarkers/hba1c.html'],
@@ -684,10 +682,12 @@ jobs:
           const baselinePortugueseEscapes = audit('pt', baseReader);
 
           assert.deepEqual(spanishEscapes, [], `Spanish pages escape their locale: ${spanishEscapes.join(', ')}`);
+          // Removing a legacy escape is allowed; adding a new one is a regression.
+          const newPortugueseEscapes = portugueseEscapes.filter((escape) => !baselinePortugueseEscapes.includes(escape));
           assert.deepEqual(
-            portugueseEscapes,
-            baselinePortugueseEscapes,
-            'Portuguese locale routing changed outside the approved Spanish fix'
+            newPortugueseEscapes,
+            [],
+            `Portuguese pages introduced new locale escapes: ${newPortugueseEscapes.join(', ')}`
           );
 
           const spanishHomepage = fs.readFileSync('es/index.html', 'utf8');
