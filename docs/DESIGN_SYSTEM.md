@@ -4,6 +4,26 @@
 
 The interface should feel scientific, premium, calm, modern and credible. It should not resemble a supplement store, clinic funnel or speculative biohacking landing page.
 
+## Theme — "Sage & Paper" (2026-11-18)
+
+`assets/theme.css` is loaded last on every page and defines the current palette. Legacy tokens in `styles.css` and `molecule.css` are mapped onto it.
+
+| Token | Value | Use |
+|---|---|---|
+| `--wm-bg` | `#f7f5f0` | Page background |
+| `--wm-surface` | `#ffffff` | Cards and panels |
+| `--wm-surface-2` | `#f0ede6` | Bands, table headers |
+| `--wm-ink` | `#142229` | Headings |
+| `--wm-ink-2` | `#2c3c44` | Body text |
+| `--wm-muted` | `#5a6970` | Supporting text |
+| `--wm-line` | `#e4e0d7` | Borders |
+| `--wm-primary` | `#1f6b5a` | Brand, links, primary buttons |
+| `--wm-primary-soft` | `#e3efe9` | Highlights, badges |
+| `--wm-accent` | `#b5653a` | Sparse secondary accent |
+| `--wm-gold` / `--wm-gold-soft` | `#8a6414` / `#fbf3dc` | Warnings |
+
+Headings `h1`/`h2` use the system serif stack (`--wm-serif`); body text keeps the system sans stack. No web fonts are loaded.
+
 ## Design tokens
 
 Current production tokens live in `assets/styles.css`:

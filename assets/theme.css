@@ -1,0 +1,197 @@
+/*
+  WellMax theme — "Sage & Paper"
+  Loaded last on every page. Overrides the legacy dark tokens and the
+  hard-coded dark surfaces in styles.css, wellmax.css and molecule.css,
+  and styles components that previously had no CSS.
+  See docs/DESIGN_SYSTEM.md.
+*/
+:root{
+  --wm-bg:#f7f5f0;
+  --wm-surface:#ffffff;
+  --wm-surface-2:#f0ede6;
+  --wm-ink:#142229;
+  --wm-ink-2:#2c3c44;
+  --wm-muted:#5a6970;
+  --wm-line:#e4e0d7;
+  --wm-line-strong:#cfc9bc;
+  --wm-primary:#1f6b5a;
+  --wm-primary-600:#17574a;
+  --wm-primary-soft:#e3efe9;
+  --wm-accent:#b5653a;
+  --wm-accent-soft:#f6e8de;
+  --wm-gold:#8a6414;
+  --wm-gold-soft:#fbf3dc;
+  --wm-danger:#a8403b;
+  --wm-danger-soft:#f9e7e5;
+  --wm-shadow-sm:0 1px 2px rgba(20,34,41,.05),0 2px 8px rgba(20,34,41,.04);
+  --wm-shadow:0 1px 2px rgba(20,34,41,.04),0 12px 32px rgba(20,34,41,.07);
+  --wm-serif:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+
+  /* legacy tokens */
+  --bg:var(--wm-bg);--panel:var(--wm-surface);--panel2:var(--wm-surface-2);
+  --text:var(--wm-ink);--muted:var(--wm-muted);
+  --accent:var(--wm-primary);--accent2:var(--wm-accent);
+  --line:var(--wm-line);--shadow:var(--wm-shadow);--radius:18px;
+  --mol-bg:var(--wm-bg);--mol-surface:var(--wm-surface);--mol-surface-2:var(--wm-surface-2);
+  --mol-line:var(--wm-line);--mol-line-strong:#b9d6cb;--mol-text:var(--wm-ink);--mol-muted:var(--wm-muted);
+  --mol-accent:var(--wm-primary);--mol-accent-2:var(--wm-accent);--mol-warn:var(--wm-gold);--mol-danger:var(--wm-danger);--mol-shadow:var(--wm-shadow);
+  --r-bg:var(--wm-bg);--r-panel:var(--wm-surface);--r-line:var(--wm-line);--r-cyan:var(--wm-primary);--r-purple:#5b5fc7;--r-pink:var(--wm-danger);
+  --r-gold:var(--wm-gold);--r-green:var(--wm-primary);--r-text:var(--wm-ink);--r-muted:var(--wm-muted);
+  color-scheme:light;
+}
+
+/* ---------- Base ---------- */
+html body,body.molecule-page{background:var(--wm-bg)!important;color:var(--wm-ink-2)}
+body{font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{color:var(--wm-ink)}
+h1,h2,.highlight-title,.molecule-title{font-family:var(--wm-serif);font-weight:600}
+h1,.highlight-slide h1,.highlight-slide .highlight-title,.reta-top h1{font-size:clamp(40px,5.4vw,68px)!important;line-height:1.05!important;letter-spacing:-.02em!important}
+h2{letter-spacing:-.01em}
+h1 span,.reta-top h1 span{background:none!important;-webkit-background-clip:initial!important;color:var(--wm-primary)!important}
+p,li{color:inherit}
+a{color:inherit}
+main a:not(.button):not([class]){color:var(--wm-primary);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #8cc3b2!important;outline-offset:3px}
+.eyebrow,.reta-kicker,.molecule-kicker{color:var(--wm-primary)!important;letter-spacing:.14em}
+.hero-text,.molecule-lead,.reta-lead,.reta-head p,.bio-hero-copy,.highlight-slide>div>p:not(.eyebrow){color:var(--wm-muted)!important}
+.fine-print,small{color:var(--wm-muted)}
+strong,b{color:var(--wm-ink)}
+
+/* ---------- Header and footer ---------- */
+.site-header,.molecule-page .site-header{background:rgba(247,245,240,.9)!important;border-bottom:1px solid var(--wm-line)!important;color:var(--wm-ink)}
+.brand{color:var(--wm-ink)}
+.brand-mark{background:var(--wm-primary)!important;color:#fff!important;border-radius:10px}
+.main-nav,.main-nav a{color:var(--wm-muted)}
+.main-nav a:hover,.main-nav a[aria-current],.main-nav a.active{color:var(--wm-ink)}
+.main-nav.open{background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;box-shadow:var(--wm-shadow)}
+.menu-toggle{color:var(--wm-ink)!important}
+.language-button{border:1px solid var(--wm-line-strong)!important;background:var(--wm-surface)!important;color:var(--wm-ink)!important}
+.language-button:hover,.language-menu.open .language-button{border-color:var(--wm-primary)!important;background:var(--wm-primary-soft)!important}
+.language-dropdown{background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;box-shadow:var(--wm-shadow)}
+.language-dropdown a{color:var(--wm-ink-2)}
+.language-dropdown a:hover,.language-dropdown a:focus-visible,.language-dropdown a.active{background:var(--wm-primary-soft)!important;color:var(--wm-ink)!important}
+footer,.site-footer,.reta-footer{background:var(--wm-surface-2);border-top:1px solid var(--wm-line)!important;color:var(--wm-muted)!important}
+footer strong,.site-footer strong{color:var(--wm-ink)}
+
+/* ---------- Buttons, inputs, pills ---------- */
+.button{border:1px solid var(--wm-line-strong);color:var(--wm-ink);background:var(--wm-surface);transition:background .15s,border-color .15s,transform .15s}
+.button.primary,.search-box button{background:var(--wm-primary)!important;color:#fff!important;border:0}
+.button.primary:hover,.search-box button:hover{background:var(--wm-primary-600)!important}
+.button.secondary{background:var(--wm-surface)!important;color:var(--wm-ink)!important}
+.button.secondary:hover{border-color:var(--wm-primary)}
+.text-link{color:var(--wm-primary)!important;font-weight:600}
+.filter-button{background:var(--wm-surface)!important;border:1px solid var(--wm-line-strong)!important;color:var(--wm-ink-2)!important}
+.filter-button.active{background:var(--wm-primary)!important;border-color:var(--wm-primary)!important;color:#fff!important}
+.search-box{background:var(--wm-surface)!important;border:1px solid var(--wm-line-strong)!important;box-shadow:var(--wm-shadow-sm)}
+.search-box input{color:var(--wm-ink)!important}
+.search-box input::placeholder{color:#8a969b}
+.status-pill{background:var(--wm-primary-soft)!important;color:var(--wm-primary)!important}
+.molecule-tag,.bio-chip,.highlight-visual span,.reta-nav a,.molecule-rail a{background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;color:var(--wm-ink-2)!important}
+.bio-chip.accent{background:var(--wm-primary-soft)!important;border-color:#b9d6cb!important;color:var(--wm-primary)!important}
+select,.molecule-field select{background:var(--wm-surface)!important;color:var(--wm-ink)!important;border:1px solid var(--wm-line-strong)!important}
+
+/* ---------- Surfaces and cards ---------- */
+.evidence-card,.highlight-slide,.bio-hero-shell,.molecule-hero-copy,.molecule-hero-panel{background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;box-shadow:var(--wm-shadow)!important}
+.evidence-card h2{font-size:28px}
+.highlight-slide{background:linear-gradient(135deg,#ffffff 0%,#f3f7f4 100%)!important}
+.highlight-visual{background:var(--wm-primary-soft)!important;border:1px solid #c9ded5!important}
+.highlight-visual:before{background:rgba(31,107,90,.10)!important}
+.highlight-visual:after{background:rgba(181,101,58,.10)!important}
+.highlight-visual strong{color:var(--wm-primary-600)}
+.bio-hero-shell:before,.reta-page{background-image:none!important}
+.service-card,.category-grid a,.molecule-card,.biomarker-card,.comparison-card,.explore-card,.tier-card,.process-grid article,.evidence-scale div,
+.bio-metric-card,.bio-node,.bio-panel,.bio-check,.bio-signal,.molecule-metric,.molecule-node,.molecule-panel,.molecule-check,.molecule-signal,
+.molecule-calc-controls,.molecule-calc-output,.molecule-footer-note,.reta-kpi,.reta-card,.signal-list div,.chat-answer,.timeline article{
+  background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;box-shadow:var(--wm-shadow-sm);color:var(--wm-ink-2)}
+.service-card:hover,.category-grid a:hover,.molecule-card:hover,.biomarker-card:hover,.comparison-card:hover,.explore-card:hover{border-color:#b9d6cb!important;box-shadow:var(--wm-shadow)!important;background:var(--wm-surface)!important}
+.explore-card.featured,.tier-card.featured,.molecule-card.emphasis,.bio-metric-card.featured,.molecule-calc-result{background:var(--wm-primary-soft)!important;border-color:#b9d6cb!important}
+.feature-band,.ai-preview,.membership-banner,.calculator-preview,.molecule-calc>#materials{background:var(--wm-surface-2)!important;border:1px solid var(--wm-line)!important}
+.timeline article{border-left:3px solid var(--wm-primary)!important}
+.chat-question{background:var(--wm-primary-soft)!important;color:var(--wm-ink)}
+.service-card small,.molecule-card small,.biomarker-card small,.comparison-card small,.explore-card b,.molecule-metric span,.molecule-calc-result span,
+.bio-panel p,.bio-check span,.bio-metric-card p,.bio-metric-card .metric small,.bio-metric-card .label,.bio-signal span,.reta-card p,.molecule-node p,.molecule-card p{color:var(--wm-muted)!important}
+.explore-card b,.bio-panel strong{color:var(--wm-ink)!important}
+.signal-list span,.molecule-card-index,.bio-node .node-id,.bio-check b,.evidence-scale b{background:var(--wm-primary-soft)!important;color:var(--wm-primary)!important}
+.bio-signal small{color:var(--wm-primary)!important}
+.molecule-signal small,.molecule-metric small{color:var(--wm-muted)}
+.molecule-calc>#materials>.molecule-calc-controls .molecule-field,.molecule-calc>#materials>.molecule-metrics .molecule-metric{background:var(--wm-surface)!important}
+.molecule-calc-table tr.is-selected td{background:var(--wm-primary-soft)!important;color:var(--wm-ink)!important}
+.molecule-calc-table td,.molecule-calc-table th{border-color:var(--wm-line)!important}
+.molecule-hero-panel:before,.bio-metric-card:after{background:rgba(31,107,90,.06)!important}
+.molecule-list-item i,.molecule-kicker:before{background:var(--wm-primary)!important}
+.molecule-node:after{background:#b9d6cb!important}
+.trust-strip{color:var(--wm-muted)!important;border-color:var(--wm-line)!important;background:var(--wm-surface)}
+.trust-strip span{display:inline-flex;align-items:center;gap:8px}
+.trust-strip span:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--wm-primary)}
+.carousel-arrow{background:var(--wm-surface)!important;border:1px solid var(--wm-line-strong)!important;color:var(--wm-ink)!important;box-shadow:var(--wm-shadow-sm)}
+.carousel-arrow:hover{background:var(--wm-primary-soft)!important}
+.carousel-dots button{background:var(--wm-line-strong)!important}
+.carousel-dots button.active{background:var(--wm-primary)!important}
+
+/* ---------- Alerts and callouts ---------- */
+.molecule-alert,.bio-alert,.reta-note{background:var(--wm-gold-soft)!important;border:1px solid #ecd9a3!important;color:#5c4511!important}
+.molecule-alert strong,.bio-alert strong{color:#5c4511!important}
+.molecule-alert p{color:#6b5418!important}
+.molecule-check.good{border-color:#b9d6cb!important}
+.molecule-check.stop{background:var(--wm-danger-soft)!important;border-color:#eec6c2!important}
+.reta-callout{background:var(--wm-primary-soft)!important;border-left-color:var(--wm-primary)!important}
+.reta-callout.warn{background:var(--wm-danger-soft)!important;border-left-color:var(--wm-danger)!important}
+.wm-warning{background:var(--wm-gold-soft)!important;border:1px solid #ecd9a3!important;border-left:5px solid var(--wm-gold)!important;color:#5c4511!important;box-shadow:none}
+.wm-warning strong{color:#5c4511!important;letter-spacing:.08em;font-size:.8rem}
+
+/* ---------- Tables ---------- */
+.wm-dose-table,.reta-table{background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;border-radius:14px;overflow:hidden;border-collapse:separate;border-spacing:0}
+.wm-dose-table th,.reta-table th{background:var(--wm-surface-2)!important;color:var(--wm-ink)!important;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.wm-dose-table th,.wm-dose-table td,.reta-table th,.reta-table td{border-bottom:1px solid var(--wm-line)!important}
+.wm-dose-table tr:last-child td,.reta-table tr:last-child td{border-bottom:0!important}
+.wm-dose-table td:first-child{font-weight:600;color:var(--wm-ink)}
+.wm-source{color:var(--wm-muted)}
+
+/* ---------- Retatrutide (PT) page ---------- */
+.reta-section,.reta-footer{border-top:1px solid var(--wm-line)!important}
+.reta-figure{background:#0f2130!important;border:1px solid var(--wm-line)!important;box-shadow:var(--wm-shadow)!important}
+.reta-caption{background:var(--wm-surface)!important;color:var(--wm-muted)!important;border-top:1px solid var(--wm-line)!important}
+.reta-kpi b{color:var(--wm-primary)}
+
+/* ---------- Components that previously had no CSS ---------- */
+.foundation-grid,.audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:8px}
+.foundation-grid article,.audience-grid article{background:var(--wm-surface);border:1px solid var(--wm-line);border-radius:16px;padding:22px 22px 20px;box-shadow:var(--wm-shadow-sm)}
+.foundation-grid article>span,.audience-grid article>span{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:28px;padding:0 9px;border-radius:8px;background:var(--wm-primary-soft);color:var(--wm-primary);font-size:12px;font-weight:700;letter-spacing:.04em}
+.foundation-grid h3,.audience-grid h3{margin:14px 0 6px;font-size:18px;line-height:1.3}
+.foundation-grid p,.audience-grid p{margin:0;color:var(--wm-muted);font-size:15.5px}
+.profile-panel{background:var(--wm-surface);border:1px solid var(--wm-line);border-radius:18px;padding:26px 28px;box-shadow:var(--wm-shadow-sm)}
+.profile-panel h2{margin-top:0}
+.profile-panel p{margin:0 0 12px}
+.profile-panel p:last-child{margin-bottom:0}
+.professional-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.professional-tags span{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:var(--wm-surface);border:1px solid var(--wm-line-strong);color:var(--wm-ink-2);font-size:13px;font-weight:600}
+.tool-list{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.tool-list a{display:inline-flex;align-items:center;padding:9px 14px;border-radius:12px;background:var(--wm-surface);border:1px solid var(--wm-line-strong);color:var(--wm-ink);font-weight:600;font-size:14px}
+.tool-list a:hover{border-color:var(--wm-primary);background:var(--wm-primary-soft)}
+.audience-section,.evidence-section{max-width:var(--max,1180px);margin:0 auto}
+.page-hero{padding-top:64px;padding-bottom:28px}
+.page-hero p:not(.eyebrow){color:var(--wm-muted);font-size:19px;max-width:760px}
+.section{padding-top:48px;padding-bottom:48px}
+.section-heading p{color:var(--wm-muted)}
+.feature-band h2{margin-top:6px}
+
+/* ---------- Hero spacing ---------- */
+.hero{padding-top:64px!important;padding-bottom:40px!important;align-items:center}
+.evidence-card .eyebrow{margin-top:0}
+
+@media (max-width:760px){
+  body{font-size:16px}
+  .profile-panel{padding:20px}
+  .section{padding-top:36px;padding-bottom:36px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- Refinements ---------- */
+h2,.section-heading h2,.reta-head h2{line-height:1.15!important}
+.molecule-rail{background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;box-shadow:var(--wm-shadow-sm)}
+.molecule-rail a{border:0!important;background:transparent!important;color:var(--wm-muted)!important}
+.molecule-rail a:hover,.molecule-rail a:focus-visible{background:var(--wm-primary-soft)!important;color:var(--wm-ink)!important}
+.foundation-grid article>span,.audience-grid article>span{white-space:nowrap}
+footer,.site-footer{background:transparent}
+@media (max-width:760px){.trust-strip{gap:10px 22px!important;justify-content:flex-start!important;padding:16px 20px!important}}
+.site-header .brand{margin-right:28px}
