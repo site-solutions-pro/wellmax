@@ -4,25 +4,23 @@
 
 The interface should feel scientific, premium, calm, modern and credible. It should not resemble a supplement store, clinic funnel or speculative biohacking landing page.
 
-## Theme — "Sage & Paper" (2026-11-18)
+## Theme — "Lab Signal" (2026-11-19)
 
-`assets/theme.css` is loaded last on every page and defines the current palette. Legacy tokens in `styles.css` and `molecule.css` are mapped onto it.
+`assets/theme.css` is loaded last on every page and defines the current palette: a dark, data-instrument look for evidence-based biohacking. Legacy tokens in `styles.css` and `molecule.css` are mapped onto it.
 
 | Token | Value | Use |
 |---|---|---|
-| `--wm-bg` | `#f7f5f0` | Page background |
-| `--wm-surface` | `#ffffff` | Cards and panels |
-| `--wm-surface-2` | `#f0ede6` | Bands, table headers |
-| `--wm-ink` | `#142229` | Headings |
-| `--wm-ink-2` | `#2c3c44` | Body text |
-| `--wm-muted` | `#5a6970` | Supporting text |
-| `--wm-line` | `#e4e0d7` | Borders |
-| `--wm-primary` | `#1f6b5a` | Brand, links, primary buttons |
-| `--wm-primary-soft` | `#e3efe9` | Highlights, badges |
-| `--wm-accent` | `#b5653a` | Sparse secondary accent |
-| `--wm-gold` / `--wm-gold-soft` | `#8a6414` / `#fbf3dc` | Warnings |
+| `--wm-bg` | `#07090c` | Page background, with a faint 48px grid |
+| `--wm-surface` / `--wm-surface-2` | `#0d1116` / `#121820` | Cards, panels, table headers |
+| `--wm-ink` / `--wm-ink-2` | `#f1f5f3` / `#c3ccc9` | Headings / body text |
+| `--wm-muted` | `#8b9793` | Supporting text |
+| `--wm-line` / `--wm-line-strong` | `#1d252e` / `#2b3540` | Borders |
+| `--wm-signal` | `#b8f53d` | Brand, links, primary buttons, data highlights |
+| `--wm-cyan` | `#3fe0f2` | Secondary accent |
+| `--wm-amber` | `#f6b93b` | Warnings |
+| `--wm-red` | `#ff5d6c` | Stop / risk states |
 
-Headings `h1`/`h2` use the system serif stack (`--wm-serif`); body text keeps the system sans stack. No web fonts are loaded.
+Eyebrows, labels, tags, table headers and metric readouts use the system monospace stack (`--wm-mono`); headings and body use the system sans stack. No web fonts are loaded. Primary buttons use dark text on `--wm-signal`.
 
 ## Design tokens
 
