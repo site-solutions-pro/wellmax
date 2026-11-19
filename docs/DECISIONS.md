@@ -1,5 +1,13 @@
 # Product and Architecture Decisions
 
+## 2026-11-18 — Preparation and cited dose content allowed
+
+**Decision:** Molecule pages may teach preparation of lyophilized vials and report label doses (approved medicines) and study-arm doses (investigational compounds) with citations. Dose recommendations, cycles, stacks and sourcing remain prohibited. Every such page shows the standard warning block.
+
+**Reason:** Owner direction that WellMax is an educational site and should teach preparation.
+
+**Status:** Adopted. See `docs/PREPARATION_AND_DOSE_POLICY.md`.
+
 ## 2026-08-02 — Platform-led homepage
 
 **Decision:** The homepage leads with platform services and health intelligence rather than individual peptide cards.

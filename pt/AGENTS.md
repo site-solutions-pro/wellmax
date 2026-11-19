@@ -22,7 +22,8 @@ These instructions apply to every file under `pt/` and supplement the root `AGEN
 - Translation must preserve meaning, evidence class, uncertainty, safety boundaries, references, regulatory jurisdiction, dates, and structured-data claims.
 - Do not translate an English approval statement into a broader Brazilian regulatory claim.
 - Regulatory claims relevant to Brazil require an official Brazilian source and dated verification when presented as Brazilian status.
-- Do not add dosing, reconstitution, preparation, storage, injection, sourcing, or self-administration instructions.
+- Preparation content, label dosing and cited study-arm doses follow `docs/PREPARATION_AND_DOSE_POLICY.md`, with the PT-BR warning text.
+- Do not add dose recommendations, invented doses, cycles, stacks, sourcing, or self-administration advice.
 - Existing flagged safety content remains subject to `docs/SAFETY_CONTENT_REVIEW.md` and human review.
 
 ## Required handoff checks

@@ -106,7 +106,7 @@ Objective: add useful, accessible tools only after content, safety, identity, an
 - [ ] Define approved educational tool categories and clinical-safety boundaries.
 - [ ] Prioritize evidence explorers, comparison tools, research timelines, and non-diagnostic biomarker education.
 - [ ] Require progressive enhancement, keyboard access, mobile support, and clear limitations.
-- [ ] Prohibit dosing, reconstitution, self-medication, or individualized treatment calculators.
+- [ ] Concentration calculators for lyophilized vials are allowed under `docs/PREPARATION_AND_DOSE_POLICY.md`; prohibit dose, self-medication, or individualized treatment calculators.
 - [ ] Define privacy and data-handling requirements before collecting user health data.
 - [ ] Add analytics only with an approved measurement and privacy plan.
 - [ ] Validate performance budgets and no-JavaScript fallback.

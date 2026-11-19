@@ -21,7 +21,8 @@ These instructions apply to every file under `es/` and supplement the root `AGEN
 
 - Preserve scientific meaning, evidence class, uncertainty, safety language, citations, review dates, and regulatory jurisdiction.
 - Do not imply that an FDA, EMA, or other jurisdictional decision automatically applies to every Spanish-speaking jurisdiction.
-- Do not add actionable clinical, dosing, reconstitution, sourcing, or self-administration guidance.
+- Preparation content, label dosing and cited study-arm doses follow `docs/PREPARATION_AND_DOSE_POLICY.md`, with the ES warning text.
+- Do not add dose recommendations, invented doses, cycles, stacks, sourcing, or self-administration advice.
 - Mark incomplete translations explicitly rather than presenting a shell as complete.
 
 ## Required handoff checks
