@@ -91,7 +91,8 @@ This record may live in a page, structured content source, review report, or PR 
 - Report observed adverse events with study context and denominators when reliably available.
 - Describe missing duration, population, formulation, interaction, and rare-event data.
 - Do not imply safety from small samples or absent reports.
-- Do not create dosing, preparation, reconstitution, storage, injection, cycle, stack, sourcing, or individualized treatment guidance.
+- Preparation content, label dosing and cited study-arm doses follow `docs/PREPARATION_AND_DOSE_POLICY.md`.
+- Do not create dose recommendations, cycles, stacks, sourcing, or individualized treatment guidance.
 - Evidence-only descriptions of study arms must be clearly framed as study reporting, not user instructions.
 - Flag ambiguous actionable content for human clinical-safety review.
 

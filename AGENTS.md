@@ -35,10 +35,11 @@ WellMax is an evidence-based scientific education platform covering peptides, me
 
 WellMax provides education, not diagnosis, prescribing, treatment, or a substitute for qualified medical care.
 
+Preparation of lyophilized vials (reconstitution, aseptic technique, concentration, storage, inspection) is allowed under `docs/PREPARATION_AND_DOSE_POLICY.md`, always with the standard warning block.
+
 Never create or normalize into actionable guidance:
 
-- Dosing or dose escalation.
-- Reconstitution, preparation, storage, or injection instructions.
+- Dose recommendations for the reader. Label dosing for approved medicines and study-arm doses for investigational compounds are allowed with citations under `docs/PREPARATION_AND_DOSE_POLICY.md`.
 - Treatment cycles, stacks, or individualized protocols.
 - Product sourcing or purchasing instructions.
 - Self-medication or self-administration guidance.

@@ -15,7 +15,8 @@ These instructions apply to English molecule profiles under `peptides/`. The sci
 ## Safety and regulatory boundaries
 
 - Clearly distinguish approved therapies from investigational compounds and approved indications from off-label or theoretical applications.
-- Do not provide dosing, dose escalation, reconstitution, preparation, storage, injection, cycles, stacks, sourcing, or self-administration guidance.
+- Preparation content, label dosing and cited study-arm doses follow `docs/PREPARATION_AND_DOSE_POLICY.md`, with the standard warning block.
+- Do not provide dose recommendations, invented doses, cycles, stacks, sourcing, or self-administration advice.
 - Do not infer safety from absent reports or efficacy from a mechanism.
 - Material scientific, safety, or regulatory changes require independent qualified human approval.
 

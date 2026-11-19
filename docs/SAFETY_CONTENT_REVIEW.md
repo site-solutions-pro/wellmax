@@ -76,3 +76,7 @@ For each page, record:
 3. Whether concentration calculators or material estimators are permissible under the platform safety policy.
 4. Whether study dose reporting is adequately distinguished from user instructions.
 5. Any required legal or regulatory review before republication.
+
+## Policy update — 2026-11-18
+
+The owner adopted `docs/PREPARATION_AND_DOSE_POLICY.md`. Preparation content on the six flagged PT pages is now reviewed against that policy instead of the earlier blanket prohibition, and each page shows the standard PT-BR warning block. Items still open for human review: the third-party reference values on `pt/peptides/aod-9604.html` ("Referência usada no PeptideDosages") and confirmation that no page recommends a dose, cycle or combination.

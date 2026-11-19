@@ -115,8 +115,7 @@ Every major profile should conclude with a short synthesis containing:
 
 ## Prohibited content
 
-- Dosing or dose-escalation instructions.
-- Reconstitution or injection instructions.
+- Dose recommendations, cycles or stacks (label and cited study doses are allowed under `docs/PREPARATION_AND_DOSE_POLICY.md`).
 - Treatment cycles or stacks.
 - Individualized treatment protocols.
 - Product sourcing.

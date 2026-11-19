@@ -88,7 +88,7 @@ This schema is a contract, not a requirement to add visible YAML or new meta tag
 - [ ] Regulatory status, jurisdiction, review status, and date where applicable.
 - [ ] Safety findings and evidence limitations or `EVIDENCE_UNAVAILABLE`.
 - [ ] No fabricated facts or citations.
-- [ ] No actionable dosing, reconstitution, injection, treatment, sourcing, or self-administration guidance.
+- [ ] Preparation and dose content complies with `docs/PREPARATION_AND_DOSE_POLICY.md` and shows the standard warning block; no dose recommendations, cycles, stacks or sourcing.
 
 ### UX and quality
 
