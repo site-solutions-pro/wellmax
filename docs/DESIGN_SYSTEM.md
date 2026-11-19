@@ -4,6 +4,25 @@
 
 The interface should feel scientific, premium, calm, modern and credible. It should not resemble a supplement store, clinic funnel or speculative biohacking landing page.
 
+## Theme — "Lab Signal" (2026-11-19)
+
+`assets/theme.css` is loaded last on every page and defines the current palette: a dark, data-instrument look for evidence-based biohacking. Legacy tokens in `styles.css` and `molecule.css` are mapped onto it.
+
+| Token | Value | Use |
+|---|---|---|
+| `--wm-bg` | `#07090c` | Page background, with a faint 48px grid |
+| `--wm-surface` / `--wm-surface-2` | `#0d1116` / `#121820` | Cards, panels, table headers |
+| `--wm-ink` / `--wm-ink-2` | `#f1f5f3` / `#c3ccc9` | Headings / body text |
+| `--wm-muted` | `#8b9793` | Supporting text |
+| `--wm-line` / `--wm-line-strong` | `#1d252e` / `#2b3540` | Borders |
+| `--wm-signal` | `#b8f53d` | Brand, links, primary buttons, data highlights |
+| `--wm-violet` | `#a879ff` | Secondary accent: background glow, alternate badges, planned states, header line, link hover |
+| `--wm-cyan` | `#3fe0f2` | Reserved (legacy figures) |
+| `--wm-amber` | `#f6b93b` | Warnings |
+| `--wm-red` | `#ff5d6c` | Stop / risk states |
+
+Eyebrows, labels, tags, table headers and metric readouts use the system monospace stack (`--wm-mono`); headings and body use the system sans stack. No web fonts are loaded. Primary buttons use dark text on `--wm-signal`.
+
 ## Design tokens
 
 Current production tokens live in `assets/styles.css`:
