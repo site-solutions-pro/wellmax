@@ -16,7 +16,8 @@ The interface should feel scientific, premium, calm, modern and credible. It sho
 | `--wm-muted` | `#8b9793` | Supporting text |
 | `--wm-line` / `--wm-line-strong` | `#1d252e` / `#2b3540` | Borders |
 | `--wm-signal` | `#b8f53d` | Brand, links, primary buttons, data highlights |
-| `--wm-cyan` | `#3fe0f2` | Secondary accent |
+| `--wm-violet` | `#a879ff` | Secondary accent: background glow, alternate badges, planned states, header line, link hover |
+| `--wm-cyan` | `#3fe0f2` | Reserved (legacy figures) |
 | `--wm-amber` | `#f6b93b` | Warnings |
 | `--wm-red` | `#ff5d6c` | Stop / risk states |
 

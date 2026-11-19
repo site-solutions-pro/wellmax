@@ -11,6 +11,7 @@
   --wm-line:#1d252e;--wm-line-strong:#2b3540;
   --wm-signal:#b8f53d;--wm-signal-600:#9fdc22;--wm-signal-soft:rgba(184,245,61,.09);--wm-signal-line:rgba(184,245,61,.35);
   --wm-cyan:#3fe0f2;--wm-cyan-soft:rgba(63,224,242,.09);
+  --wm-violet:#a879ff;--wm-violet-600:#8f5cf5;--wm-violet-soft:rgba(168,121,255,.10);--wm-violet-line:rgba(168,121,255,.38);
   --wm-amber:#f6b93b;--wm-amber-soft:rgba(246,185,59,.08);
   --wm-red:#ff5d6c;--wm-red-soft:rgba(255,93,108,.08);
   --wm-glow:0 0 0 1px var(--wm-signal-line),0 0 28px rgba(184,245,61,.12);
@@ -18,10 +19,10 @@
   --wm-mono:ui-monospace,"SF Mono","JetBrains Mono","Cascadia Code",Menlo,Consolas,monospace;
   --wm-sans:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
   --bg:var(--wm-bg);--panel:var(--wm-surface);--panel2:var(--wm-surface-2);--text:var(--wm-ink);--muted:var(--wm-muted);
-  --accent:var(--wm-signal);--accent2:var(--wm-cyan);--line:var(--wm-line);--shadow:var(--wm-shadow);--radius:14px;
+  --accent:var(--wm-signal);--accent2:var(--wm-violet);--line:var(--wm-line);--shadow:var(--wm-shadow);--radius:14px;
   --mol-bg:var(--wm-bg);--mol-surface:var(--wm-surface);--mol-surface-2:var(--wm-surface-2);--mol-line:var(--wm-line);--mol-line-strong:var(--wm-signal-line);
-  --mol-text:var(--wm-ink);--mol-muted:var(--wm-muted);--mol-accent:var(--wm-signal);--mol-accent-2:var(--wm-cyan);--mol-warn:var(--wm-amber);--mol-danger:var(--wm-red);--mol-shadow:var(--wm-shadow);
-  --r-bg:var(--wm-bg);--r-panel:var(--wm-surface);--r-line:var(--wm-line);--r-cyan:var(--wm-cyan);--r-purple:#9b8cff;--r-pink:var(--wm-red);
+  --mol-text:var(--wm-ink);--mol-muted:var(--wm-muted);--mol-accent:var(--wm-signal);--mol-accent-2:var(--wm-violet);--mol-warn:var(--wm-amber);--mol-danger:var(--wm-red);--mol-shadow:var(--wm-shadow);
+  --r-bg:var(--wm-bg);--r-panel:var(--wm-surface);--r-line:var(--wm-line);--r-cyan:var(--wm-cyan);--r-purple:var(--wm-violet);--r-pink:var(--wm-red);
   --r-gold:var(--wm-amber);--r-green:var(--wm-signal);--r-text:var(--wm-ink);--r-muted:var(--wm-muted);
   color-scheme:dark;
 }
@@ -30,7 +31,8 @@
 html body,body.molecule-page{
   background:
     radial-gradient(ellipse 60% 40% at 85% -5%,rgba(184,245,61,.07),transparent 70%),
-    radial-gradient(ellipse 50% 35% at 0% 10%,rgba(63,224,242,.05),transparent 70%),
+    radial-gradient(ellipse 50% 35% at 0% 10%,rgba(168,121,255,.09),transparent 70%),
+    radial-gradient(ellipse 40% 30% at 100% 100%,rgba(168,121,255,.06),transparent 70%),
     linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px) 0 0/48px 48px,
     linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px) 0 0/48px 48px,
     var(--wm-bg)!important;
@@ -52,7 +54,7 @@ strong,b{color:var(--wm-ink)}
 .wm-warning strong,.status-pill,.trust-strip,.foundation-grid article>span,.audience-grid article>span,.molecule-card-index,
 .signal-list span,.evidence-scale b,.wm-dose-table th,.reta-table th,.wm-source{font-family:var(--wm-mono)!important}
 .eyebrow,.reta-kicker,.molecule-kicker{color:var(--wm-signal)!important;letter-spacing:.14em!important;font-weight:600!important;font-size:11.5px!important}
-.eyebrow:before,.reta-kicker:before{content:"// ";opacity:.55}
+.eyebrow:before,.reta-kicker:before{content:"// ";color:var(--wm-violet);opacity:.9}
 .molecule-metric strong,.molecule-signal strong,.reta-kpi b,.bio-metric-card .metric strong,.highlight-visual strong,.molecule-calc-result strong{font-family:var(--wm-mono)!important;letter-spacing:-.02em}
 .reta-kpi b,.molecule-calc-result strong{color:var(--wm-signal)!important}
 
@@ -91,10 +93,10 @@ select,.molecule-field select{background:var(--wm-surface-2)!important;color:var
 
 /* ---------- Surfaces and cards ---------- */
 .evidence-card,.highlight-slide,.bio-hero-shell,.molecule-hero-copy,.molecule-hero-panel{background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 40%),var(--wm-surface)!important;border:1px solid var(--wm-line-strong)!important;box-shadow:var(--wm-shadow)!important}
-.highlight-slide{background:radial-gradient(ellipse 50% 60% at 90% 10%,rgba(184,245,61,.08),transparent 70%),var(--wm-surface)!important}
+.highlight-slide{background:radial-gradient(ellipse 50% 60% at 90% 10%,rgba(184,245,61,.08),transparent 70%),radial-gradient(ellipse 40% 50% at 0% 100%,rgba(168,121,255,.10),transparent 70%),var(--wm-surface)!important}
 .highlight-visual{background:var(--wm-surface-2)!important;border:1px solid var(--wm-line-strong)!important}
 .highlight-visual:before{background:rgba(184,245,61,.10)!important;filter:blur(30px)!important}
-.highlight-visual:after{background:rgba(63,224,242,.08)!important;filter:blur(30px)!important}
+.highlight-visual:after{background:rgba(168,121,255,.16)!important;filter:blur(30px)!important}
 .highlight-visual strong{color:var(--wm-ink)!important}
 .bio-hero-shell:before{opacity:.5}
 .reta-page{background-image:none!important}
@@ -104,10 +106,10 @@ select,.molecule-field select{background:var(--wm-surface-2)!important;color:var
   background:var(--wm-surface)!important;border:1px solid var(--wm-line)!important;color:var(--wm-ink-2);box-shadow:none}
 .service-card,.category-grid a,.molecule-card,.biomarker-card,.comparison-card,.explore-card{transition:border-color .15s,box-shadow .15s,transform .15s}
 .service-card:hover,.category-grid a:hover,.molecule-card:hover,.biomarker-card:hover,.comparison-card:hover,.explore-card:hover{border-color:var(--wm-signal-line)!important;box-shadow:var(--wm-glow)!important;transform:translateY(-2px)}
-.explore-card.featured,.tier-card.featured,.molecule-card.emphasis,.bio-metric-card.featured,.molecule-calc-result{background:linear-gradient(160deg,rgba(184,245,61,.07),transparent 60%),var(--wm-surface)!important;border-color:var(--wm-signal-line)!important}
-.feature-band,.ai-preview,.membership-banner,.calculator-preview,.molecule-calc>#materials{background:linear-gradient(120deg,rgba(184,245,61,.05),rgba(63,224,242,.04)),var(--wm-surface)!important;border:1px solid var(--wm-line-strong)!important}
-.timeline article{border-left:2px solid var(--wm-signal)!important}
-.chat-question{background:var(--wm-cyan-soft)!important;color:var(--wm-ink)}
+.explore-card.featured,.tier-card.featured,.molecule-card.emphasis,.bio-metric-card.featured,.molecule-calc-result{background:linear-gradient(160deg,rgba(184,245,61,.07),transparent 55%),linear-gradient(340deg,rgba(168,121,255,.10),transparent 55%),var(--wm-surface)!important;border-color:var(--wm-signal-line)!important}
+.feature-band,.ai-preview,.membership-banner,.calculator-preview,.molecule-calc>#materials{background:linear-gradient(120deg,rgba(184,245,61,.06),rgba(168,121,255,.08)),var(--wm-surface)!important;border:1px solid var(--wm-line-strong)!important}
+.timeline article{border-left:2px solid var(--wm-violet)!important}
+.chat-question{background:var(--wm-violet-soft)!important;border:1px solid var(--wm-violet-line);color:var(--wm-ink)}
 .service-card small,.molecule-card small,.biomarker-card small,.comparison-card small,.molecule-metric span,.molecule-calc-result span,
 .bio-panel p,.bio-check span,.bio-metric-card p,.bio-metric-card .metric small,.bio-signal span,.reta-card p,.molecule-node p,.molecule-card p{color:var(--wm-muted)!important}
 .explore-card b,.bio-panel strong{color:var(--wm-ink)!important}
@@ -143,7 +145,7 @@ select,.molecule-field select{background:var(--wm-surface-2)!important;color:var
 
 /* ---------- Tables ---------- */
 .wm-dose-table,.reta-table{background:var(--wm-surface)!important;border:1px solid var(--wm-line-strong)!important;border-radius:12px;overflow:hidden;border-collapse:separate;border-spacing:0}
-.wm-dose-table th,.reta-table th{background:var(--wm-surface-2)!important;color:var(--wm-signal)!important;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+.wm-dose-table th,.reta-table th{background:linear-gradient(90deg,rgba(168,121,255,.10),transparent 70%),var(--wm-surface-2)!important;color:var(--wm-signal)!important;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em}
 .wm-dose-table th,.wm-dose-table td,.reta-table th,.reta-table td{border-bottom:1px solid var(--wm-line)!important;color:var(--wm-ink-2)}
 .wm-dose-table tr:last-child td,.reta-table tr:last-child td{border-bottom:0!important}
 .wm-dose-table td:first-child{color:var(--wm-ink);font-weight:600}
@@ -188,3 +190,20 @@ select,.molecule-field select{background:var(--wm-surface-2)!important;color:var
 .wm-warning{max-width:1180px;margin:20px auto!important;padding:16px 20px;line-height:1.55}
 .wm-warning strong{display:block;margin-bottom:4px}
 .wm-warning p{margin:0}
+
+/* ---------- Violet details ---------- */
+::selection{background:var(--wm-violet);color:#fff}
+main a:not(.button):not([class]):hover{text-decoration-color:var(--wm-violet)}
+.molecule-tag:hover,.bio-chip:hover,.professional-tags span:hover{border-color:var(--wm-violet-line)!important;color:var(--wm-ink)!important}
+.foundation-grid article:nth-child(even)>span,.audience-grid article:nth-child(even)>span{background:var(--wm-violet-soft);border-color:var(--wm-violet-line);color:var(--wm-violet)}
+.foundation-grid article:before,.audience-grid article:before,.service-card:before,.molecule-card:before{content:"";position:absolute;left:18px;right:18px;top:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--wm-violet),var(--wm-signal),transparent);opacity:0;transition:opacity .2s}
+.service-card,.molecule-card{position:relative}
+.foundation-grid article:hover:before,.audience-grid article:hover:before,.service-card:hover:before,.molecule-card:hover:before{opacity:1}
+.trust-strip span:nth-child(even):before{background:var(--wm-violet);box-shadow:0 0 8px var(--wm-violet)}
+.site-header:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent 5%,rgba(168,121,255,.55) 35%,rgba(184,245,61,.45) 65%,transparent 95%);pointer-events:none}
+.site-header{position:sticky}
+.status-pill.planned,.tier-card .status-pill{background:var(--wm-violet-soft)!important;color:var(--wm-violet)!important;border-color:var(--wm-violet-line)!important}
+.molecule-rail a:hover,.molecule-rail a:focus-visible{background:var(--wm-violet-soft)!important;color:var(--wm-violet)!important}
+.carousel-arrow:hover{border-color:var(--wm-violet-line)!important;color:var(--wm-violet)!important}
+.language-dropdown a.active{box-shadow:inset 2px 0 0 var(--wm-violet)}
+.reta-kpi:nth-child(even) b{color:var(--wm-violet)!important}
